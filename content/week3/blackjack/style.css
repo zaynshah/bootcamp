@@ -1,0 +1,60 @@
+body,
+* {
+  font-family: Inter, Arial, sans-serif;
+}
+
+main {
+  padding: 1rem;
+  width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.cards img {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 150px;
+}
+
+.cards img:last-child {
+  margin-right: 0;
+}
+
+.points {
+  color: #2f9e44;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+nav {
+  margin: 2rem 0;
+}
+
+button {
+  background: #e7f5ff;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border: 1px solid #4dabf7;
+  font-size: 18px;
+  margin: 0 5px;
+  color: #1864ab;
+  border-radius: 5px;
+}
+
+.bad {
+  color: red;
+}
+.action {
+  color: black;
+}
+.good {
+  color: green;
+}

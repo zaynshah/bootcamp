@@ -1,0 +1,13 @@
+.flex-code {
+  display: flex;
+  flex-direction: row;
+}
+
+.url-flex {
+  display: flex;
+}
+
+.simple {
+  margin: 20px;
+  text-align: center;
+}

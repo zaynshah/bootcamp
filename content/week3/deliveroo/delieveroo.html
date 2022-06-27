@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--External CSS File-->
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Font Awesome link-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!--Kit code-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body>
+    <!--Nav Bar-->
+    <section id="navSection">
+      <nav class="navbar">
+        <div>
+          <a class="navbar-logo" href=""
+            ><img
+              src="	https://consumer-component-library.roocdn.com/25.12.3/static/images/logo-teal.svg"
+              alt="Deliveroo icon"
+              class="Deliveroo-logo"
+            />
+          </a>
+        </div>
+        <div class="searchbox-div">
+          <form class="search-box" role="search">
+            <input
+              type="search"
+              class="search"
+              name="q"
+              placeholder="Dishes, restaurants or cuisines"
+            />
+            <button class="button-icon">
+              <svg
+                height="24"
+                width="24"
+                viewBox="0 0 24 24"
+                class="search-icon"
+              >
+                <path
+                  d="M10.5 17C14.0841 17 17 14.0841 17 10.5C17 6.91592 14.0841 4 10.5 4C6.91592 4 4 6.91592 4 10.5C4 14.0841 6.91592 17 10.5 17ZM10.5 2C15.1944 2 19 5.80558 19 10.5C19 12.3368 18.4173 14.0374 17.4268 15.4273L22 20.0049L20.0049 22L15.4272 17.4269C14.0373 18.4173 12.3368 19 10.5 19C5.80558 19 2 15.1944 2 10.5C2 5.80558 5.80558 2 10.5 2Z"
+                ></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="signin-button">
+          <button class="signin" type="button">
+            <ion-icon name="home-outline"></ion-icon>Sign up or log in
+          </button>
+        </div>
+        <div class="menu-button">
+          <button class="menu" type="button">
+            <i class="fas fa-bars"></i>Menu
+          </button>
+        </div>
+      </nav>
+    </section>
+    <!--Delieveroo Sidebar-->
+    <section id="Sidebar-replication">
+      <div class="sidenav">
+        <div class="delivery-area">
+          <div class="name-area">
+            <img class="shopping" src="shopping.png" alt="shpping logo" />
+            <span class="location">Sudbury Hill</span>
+            <a class="change" href="">Change</a>
+          </div>
+          <div class="delivery-options">
+            <ul class="delivery-option">
+              <li>
+                <input
+                  type="radio"
+                  id="Delivery"
+                  name="delivery"
+                  value="Delivery"
+                  checked
+                />
+                <label for="Delivery">Delivery</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="Pickup"
+                  name="delivery"
+                  value="Pickup"
+                />
+                <label for="Pickup">Pickup</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="Table-Service"
+                  name="delivery"
+                  value="Table Service"
+                />
+                <label for="Table-Service">Table Service</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="categories-area">
+          <div class="cat">
+            <span class="location">Categories</span>
+          </div>
+          <ul class="delivery-option scroll">
+            <li>
+              <input
+                type="checkbox"
+                id="1"
+                name="categories"
+                value="2 Dine for £20"
+              />
+              <label for="1">2 Dine for £20</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="2"
+                name="categories"
+                value="20% off local favourites "
+              />
+              <label for="2">20% off local favourites</label>
+            </li>
+            <li>
+              <input type="checkbox" id="3" name="categories" value="Acai" />
+              <label for="3">Acai </label>
+            </li>
+            <li>
+              <input type="checkbox" id="4" name="categories" value="Afghan" />
+              <label for="4">Afghan </label>
+            </li>
+            <li>
+              <input type="checkbox" id="5" name="categories" value="African" />
+              <label for="5">African </label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="6"
+                name="categories"
+                value="All Day Breakfast"
+              />
+              <label for="6">All Day Breakfast </label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="7"
+                name="categories"
+                value="American"
+              />
+              <label for="7">American </label>
+            </li>
+            <li>
+              <input type="checkbox" id="8" name="categories" value="Arabic" />
+              <label for="8">Arabic</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="9"
+                name="categories"
+                value="Argentinian"
+              />
+              <label for="9">Argentinian</label>
+            </li>
+            <li>
+              <input type="checkbox" id="10" name="categories" value="Asian" />
+              <label for="10">Asian</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="11"
+                name="categories"
+                value="Asian Fusion"
+              />
+              <label for="11">Asian Fusion</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="12"
+                name="categories"
+                value="Autumn Meal Deals "
+              />
+              <label for="12">Autumn Meal Deals </label>
+            </li>
+            <li>
+              <input type="checkbox" id="13" name="categories" value="BBQ " />
+              <label for="13">BBQ </label>
+            </li>
+            <li>
+              <input type="checkbox" id="14" name="categories" value="BBQ " />
+              <label for="14">Bagels</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="15"
+                name="categories"
+                value="Bakery "
+              />
+              <label for="15">Bakery</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="17"
+                name="categories"
+                value="Ben and Jerry Treats  "
+              />
+              <label for="17">Ben and Jerry Treats </label>
+            </li>
+            <li>
+              <input type="checkbox" id="18" name="categories" value="Bento" />
+              <label for="18">Bento </label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="19"
+                name="categories"
+                value="Big flavours, small prices "
+              />
+              <label for="19">Big flavours, small prices</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="20"
+                name="categories"
+                value="Brazilian "
+              />
+              <label for="20">Brazilian</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="1"
+                name="categories"
+                value="2 Dine for £20"
+              />
+              <label for="1">2 Dine for £20</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="2"
+                name="categories"
+                value="20% off local favourites "
+              />
+              <label for="2">20% off local favourites</label>
+            </li>
+            <li>
+              <input type="checkbox" id="3" name="categories" value="Acai" />
+              <label for="3">Acai </label>
+            </li>
+            <li>
+              <input type="checkbox" id="4" name="categories" value="Afghan" />
+              <label for="4">Afghan </label>
+            </li>
+            <li>
+              <input type="checkbox" id="5" name="categories" value="African" />
+              <label for="5">African </label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="6"
+                name="categories"
+                value="All Day Breakfast"
+              />
+              <label for="6">All Day Breakfast </label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="7"
+                name="categories"
+                value="American"
+              />
+              <label for="7">American </label>
+            </li>
+            <li>
+              <input type="checkbox" id="8" name="categories" value="Arabic" />
+              <label for="8">Arabic</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="9"
+                name="categories"
+                value="Argentinian"
+              />
+              <label for="9">Argentinian</label>
+            </li>
+            <li>
+              <input type="checkbox" id="10" name="categories" value="Asian" />
+              <label for="10">Asian</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="11"
+                name="categories"
+                value="Asian Fusion"
+              />
+              <label for="11">Asian Fusion</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="12"
+                name="categories"
+                value="Autumn Meal Deals "
+              />
+              <label for="12">Autumn Meal Deals </label>
+            </li>
+            <li>
+              <input type="checkbox" id="13" name="categories" value="BBQ " />
+              <label for="13">BBQ </label>
+            </li>
+            <li>
+              <input type="checkbox" id="14" name="categories" value="BBQ " />
+              <label for="14">Bagels</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="15"
+                name="categories"
+                value="Bakery "
+              />
+              <label for="15">Bakery</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="17"
+                name="categories"
+                value="Ben and Jerry Treats  "
+              />
+              <label for="17">Ben and Jerry Treats </label>
+            </li>
+            <li>
+              <input type="checkbox" id="18" name="categories" value="Bento" />
+              <label for="18">Bento </label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="19"
+                name="categories"
+                value="Big flavours, small prices "
+              />
+              <label for="19">Big flavours, small prices</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="20"
+                name="categories"
+                value="Brazilian "
+              />
+              <label for="20">Brazilian</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="food-grid">
+        <div class="title-div">
+          <span class="title-grid">Meal deals </span
+          ><a href="" class="link-grid">View all (81)</a>
+        </div>
+        <main class="cards">
+          <article class="card">
+            <img
+              src="https://rs-menus-api.roocdn.com/images/13a38256-f4d2-4e9f-b89c-6e3a0713eaee/image.jpeg?width=656&height=368&auto=webp&format=jpg&fit=crop&v="
+            />
+            <div class="text">
+              <span class="shop-name">Sam's Chicken</span>
+              <p>
+                <i class="fas fa-star"></i> 3.9 Good (500+) · Chicken · Fried
+                chicken · Burgers · American
+              </p>
+              <p>2.5 miles away · £2.99 delievery</p>
+            </div>
+          </article>
+          <!-- /card-one -->
+          <article class="card">
+            <img
+              src="https://rs-menus-api.roocdn.com/images/a89ad68a-8718-446d-949c-b94439f77cae/image.jpeg?width=656&height=368&auto=webp&format=jpg&fit=crop&v="
+            />
+            <div class="text">
+              <span class="shop-name">Flying Noodles</span>
+              <p>
+                <i class="fas fa-star"></i> 4.5 Excellent (500+) · Chinese ·
+                Noodles · Seafood · Chicken
+              </p>
+              <p>4.6 miles away · £9.99 delievery</p>
+            </div>
+          </article>
+          <!--card-two -->
+          <article class="card">
+            <img
+              src="https://rs-menus-api.roocdn.com/images/cb217e55-3734-4983-b376-ec915868f684/image.jpeg?width=656&height=368&auto=webp&format=jpg&fit=crop&v="
+            />
+            <div class="text">
+              <span class="shop-name">100% Halal Pizza</span>
+              <p>
+                <i class="fas fa-star"></i> 3.9 Good (500+) · Pizza · Italian
+              </p>
+              <p>5.4 miles away · £3.99 delievery</p>
+            </div>
+          </article>
+          <!--card-three -->
+          <article class="card">
+            <img
+              src="https://rs-menus-api.roocdn.com/images/af5325f6-32ec-4f35-ad78-8a76f152c4e3/image.jpeg?width=685&height=385&auto=webp&format=jpg&fit=crop&v="
+            />
+            <div class="text">
+              <span class="shop-name">Tortilla - burritos & Tacos</span>
+              <p>
+                <i class="fas fa-star"></i> 4.4 Very Good (500+) · Mexican ·
+                Burritos · Salads · American
+              </p>
+              <p>1.7 miles away · £2.49 delievery</p>
+            </div>
+          </article>
+          <!--card-four -->
+          <article class="card">
+            <img
+              src="https://f.roocdn.com/images/menus/343053/header-image.jpg?width=685&height=385&auto=webp&format=jpg&fit=crop&v=1635845015"
+            />
+            <div class="text">
+              <span class="shop-name">Nando's - South Harrow</span>
+              <p>
+                <i class="fas fa-star"></i> 4.3 Very Good (500+) · Chicken ·
+                Burgers · Healthy
+              </p>
+              <p>1 miles away · £2.49 delievery</p>
+            </div>
+          </article>
+          <!--card-five -->
+          <article class="card">
+            <img
+              src="https://f.roocdn.com/images/menus/283406/header-image.jpg?width=685&height=385&auto=webp&format=jpg&fit=crop&v=1612543533"
+            />
+            <div class="text">
+              <span class="shop-name">Burger King - Harrow St. Annes</span>
+              <p>
+                <i class="fas fa-star"></i> 4.3 Very Good (500+) · American ·
+                Burgers · BBQ · Fried chicken
+              </p>
+              <p>1.6 miles away · £2.49 delievery</p>
+            </div>
+          </article>
+          <!--card-six-->
+          <article class="card">
+            <img
+              src="https://rs-menus-api.roocdn.com/images/b477ff6d-10af-44df-a7d2-f15f456c2bd7/image.jpeg?width=685&height=385&auto=webp&format=jpg&fit=crop&v="
+            />
+            <div class="text">
+              <span class="shop-name">Starbucks</span>
+              <p><i class="fas fa-star"></i> 4.0 Good (500+)</p>
+              <p>0.7 miles away · £1.49 delievery</p>
+            </div>
+          </article>
+          <!--card-seven -->
+          <article class="card">
+            <img
+              src="https://rs-menus-api.roocdn.com/images/632c42ed-67db-468e-b593-5bd7c4378e97/image.jpeg?width=697&height=392&auto=webp&format=jpg&fit=crop&v="
+            />
+            <div class="text">
+              <span class="shop-name">Waitrose & Partners</span>
+              <p>
+                <i class="fas fa-star"></i> 4.7 Excellent · Alcohol · Grocery ·
+                British · Healthy
+              </p>
+              <p>1.1 miles away · £1.99 delievery</p>
+            </div>
+          </article>
+          <!--card-eight -->
+          <article class="card">
+            <img
+              src="https://f.roocdn.com/images/menus/247475/header-image.jpg?width=697&height=392&auto=webp&format=jpg&fit=crop&v=1597685988"
+            />
+            <div class="text">
+              <span class="shop-name">German Doner Kebab</span>
+              <p>
+                <i class="fas fa-star"></i> 4.3 Very Good (500+) · German ·
+                Kebab
+              </p>
+              <p>1.7 miles away · £2.49 delievery</p>
+            </div>
+          </article>
+          <!--card-nine -->
+          <article class="card">
+            <img
+              src="https://rs-menus-api.roocdn.com/images/21565a8a-f60a-4cbf-b479-6a896d0d501f/image.jpeg?width=697&height=392&auto=webp&format=jpg&fit=crop&v="
+            />
+            <div class="text">
+              <span class="shop-name">Pret A Manger</span>
+              <p>
+                <i class="fas fa-star"></i> 4.6 Excellent (500+) · Salad ·
+                Breakfast · Sandwiches · Healthy
+              </p>
+              <p>1.7 miles away · £2.49 delievery</p>
+            </div>
+          </article>
+          <!--card-ten -->
+          <article class="card">
+            <img
+              src="https://rs-menus-api.roocdn.com/images/47514fcd-d5b0-49b1-9250-08b4e022686a/image.jpeg?width=697&height=392&auto=webp&format=jpg&fit=crop&v="
+            />
+            <div class="text">
+              <span class="shop-name">Taco Bell </span>
+              <p>
+                <i class="fas fa-star"></i> 4.3 Very Good (500+) · Mexican ·
+                Tacos · Burritos
+              </p>
+              <p>1.5 miles away · £2.49 delievery</p>
+            </div>
+          </article>
+          <!--card-elven -->
+          <article class="card">
+            <img
+              src="https://rs-menus-api.roocdn.com/images/a552f843-d8bb-4929-bb70-ddeda2cb3faa/image.jpeg?width=697&height=392&auto=webp&format=jpg&fit=crop&v="
+            />
+            <div class="text">
+              <span class="shop-name">Subway - Harrow</span>
+              <p>
+                <i class="fas fa-star"></i> 4.4 Very Good (500+) · American ·
+                Sandwiches · Chicken · Healthy
+              </p>
+              <p>1.8 miles away · £2.99 delievery</p>
+            </div>
+          </article>
+          <!--card-twelve -->
+        </main>
+      </div>
+    </section>
+  </body>
+</html>

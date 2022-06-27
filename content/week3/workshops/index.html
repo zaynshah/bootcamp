@@ -1,0 +1,19 @@
+<div id="outer" style="background-color: blue; height: 200px; width: 200px">
+  <div
+    id="inner"
+    style="background-color: green; height: 100px; width: 100px"
+  ></div>
+</div>
+
+<script>
+  const outer = document.getElementById('outer')
+  const inner = document.getElementById('inner')
+
+  outer.addEventListener('click', function () {
+    alert('Outer Hi!')
+  })
+
+  inner.addEventListener('click', function () {
+    alert('Inner Hi!')
+  })
+</script>

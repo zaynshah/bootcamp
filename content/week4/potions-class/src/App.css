@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'Bluu Next';
+  src: local('Bluu Next'), url(./fonts/BluuNext-Titling.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'MasonSansRegular';
+  src: local('MasonSansRegular'),
+    url(./fonts/MasonSansRegular_Regular.ttf) format('truetype');
+}
+
+body {
+  font-family: 'Bellefair', serif;
+  color: rgba(218, 216, 216, 0.685);
+  font-size: large;
+  background-image: url('https://my.wizardingworld.com/static/media/starBg.2d56f5ec.jpg');
+  overflow: hidden;
+}
+
+.title {
+  font-family: 'Bluu Next', serif;
+  font-size: 60px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: rgba(245, 243, 243, 0.835);
+  text-shadow: 8px 8px 40px silver;
+}
+
+.app-wrapper {
+  display: flex;
+  height: 90vh;
+  width: 90vw;
+  position: relative;
+  align-content: center;
+  margin: auto;
+}
+
+.app-lhs-container,
+.app-rhs-container {
+  display: block;
+  width: 45%;
+  margin-top: 10vh;
+}
+
+/* Form CSS */
+.form-wrapper {
+  z-index: 100;
+  margin-top: 20%;
+  width: 30vw;
+  margin-left: 1.5em;
+}
+
+.form-field {
+  display: flex;
+  border-radius: 5px;
+  font-family: inherit;
+  width: 100%;
+  font-size: large;
+  color: rgba(245, 243, 243, 0.835);
+  border: rgba(245, 243, 243, 0.835);
+  background-color: rgba(34, 39, 68, 0.63);
+}
+
+.form-item {
+  margin: 10px;
+}
+
+select {
+  font-family: inherit;
+  width: 100%;
+  font-size: large;
+  color: rgba(245, 243, 243, 0.835);
+  border: rgba(245, 243, 243, 0.835);
+  background-color: rgba(34, 39, 68, 0.63);
+  text-align: center;
+}
+
+.submit-btn {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin-top: 20px;
+  text-decoration: none;
+  background: #1a314d31;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background: #3e266b9f;
+}
+
+/* Search component CSS */
+.search-wrapper {
+  z-index: 100;
+  margin-top: 20%;
+  width: 30vw;
+  margin-left: 2em;
+  max-height: 10em;
+}
+
+#search-header {
+  font-size: 1.5em;
+  margin-left: 0;
+  display: flex;
+  color: rgba(245, 243, 243, 0.835);
+}
+
+#autocomplete-wrapper {
+  max-height: 12em;
+  overflow: auto;
+}
+.autocomplete-suggestion {
+  height: 1.5em;
+  border: 1px solid rgba(255, 255, 255, 0.404);
+  text-align: center;
+  font-size: larger;
+  z-index: 100;
+}
+
+.autocomplete-suggestion:hover {
+  height: 1.5em;
+  border: 2px solid white;
+  text-align: center;
+  font-size: larger;
+  cursor: pointer;
+  background-color: rgba(9, 11, 19, 0.692);
+}
+
+/* Record component CSS */
+.register-wrapper {
+  margin-top: 2em;
+  height: 90%;
+  width: 40em;
+  overflow: auto;
+}
+
+.register-list {
+  overflow: auto;
+}
+
+#register-component-header {
+  position: fixed;
+  margin-top: -2.5em;
+  margin-left: 3em;
+}
+
+#star-background {
+  font-size: 8.5em;
+  position: fixed;
+  z-index: -2;
+  margin-top: -0.38em;
+  margin-left: 1.55em;
+  text-align: center;
+  color: rgba(12, 15, 41, 0.63);
+  text-shadow: 0px 0px 25px rgba(213, 215, 224, 0.63);
+}
+
+.component-title {
+  font-family: 'MasonSansRegular', sans-serif;
+  padding: 5px;
+  width: 21.5em;
+  color: silver;
+  margin-top: 0px;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgb(206, 177, 177);
+}
+
+/* Student record CSS */
+
+.student-record {
+  background-color: rgba(66, 50, 97, 0.233);
+  border-radius: 20px;
+  max-height: 7em;
+  margin-top: 1em;
+}
+
+.student-record-info {
+  display: flex;
+}
+
+.student-record-class-info {
+  text-align: center;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.student-record-info-is-late {
+  display: flex;
+  border-radius: 10px;
+  border: 3px solid rgba(173, 28, 28, 0.61);
+  box-shadow: 4px 3px 20px rgba(199, 23, 23, 0.76);
+}
+
+.student-record-house-badge {
+  height: 6em;
+  margin-left: 2.3em;
+  margin-right: 2em;
+  margin-top: 0.3em;
+}
+
+.student-record-student-name {
+  margin-bottom: 0;
+  margin-top: 0.5em;
+  font-size: xx-large;
+}
+
+/* Checkbox styling for late checker */
+
+.student-record-late-checker {
+  margin-top: 2em;
+  margin-left: 2em;
+}
+.student-record-late-checker-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.student-record-late-checker-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.student-record-late-checker-container:hover input ~ .checkmark {
+  background-color: rgba(173, 28, 28, 0.61);
+}
+
+.student-record-late-checker-container input:checked ~ .checkmark {
+  background-color: #7a1624;
+}
+
+.student-record-late-checker-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.student-record-late-checker-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid rgba(255, 255, 255, 0.794);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 2px;
+  background-color: rgb(117, 108, 155);
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+/* Remove default styling */
+h3,
+h2,
+h4,
+p {
+  margin-top: 0;
+}

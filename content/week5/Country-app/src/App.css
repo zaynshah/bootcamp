@@ -1,0 +1,36 @@
+.main-split {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.countries-list {
+  height: 87vh;
+  overflow: scroll;
+}
+.country-button {
+  width: 200px;
+  height: 40px;
+  margin: 15px;
+  background-color: orange;
+}
+
+.countries-data {
+  position: relative;
+  left: 10vw;
+  width: 500px;
+  height: 500px;
+  align-self: center;
+
+  justify-content: center;
+}
+
+img {
+  width: 90%;
+  height: auto;
+}

@@ -1,0 +1,254 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+/* Nav styling*/
+
+.button-icon {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+.Deliveroo-logo {
+  padding: 22px 30px;
+  padding-left: 60px;
+  width: 112px;
+  height: 32px;
+  height: auto;
+}
+
+.fa-bars {
+  color: #00b8a9;
+  margin-right: 5px;
+}
+
+ion-icon {
+  color: #00b8a9;
+  margin-right: 5px;
+}
+
+.menu {
+  width: 100px;
+  height: 38px;
+  margin: 22px 1px 22px 5px;
+}
+
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid rgb(223, 219, 219);
+  display: flex;
+  flex-direction: row;
+}
+
+::placeholder {
+  color: #2e3333;
+  opacity: 0.5;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400px;
+  font-size: 16px;
+}
+
+.search {
+  all: unset;
+  font: 16px system-ui;
+  color: #2e3333;
+  width: 900px;
+  height: 20px;
+}
+
+.search-box {
+  background-color: rgba(0, 0, 0, 0.04);
+
+  padding: 12px 40px 12px 16px;
+  height: 20px;
+  width: 600px;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border: 2px solid rgb(223, 219, 219);
+  border-radius: 4px;
+}
+.searchbox-div {
+  flex-wrap: wrap;
+  width: 1250px;
+}
+
+.search-icon {
+  fill: #2e3333;
+  opacity: 0.3;
+  width: 24px;
+  padding-top: 5px;
+  height: 20px;
+}
+.signin,
+.menu {
+  border-radius: 4px;
+  padding: 8px 16px 8px 16px;
+  background-color: white;
+  border: 1px solid rgb(223, 219, 219);
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+
+  font-size: 16px;
+
+  cursor: pointer;
+  font-weight: 400;
+}
+.signin {
+  width: 174px;
+  height: 38px;
+  margin: 22px 5px 22px 0px;
+}
+.signin:focus {
+  border-color: #cd3232;
+}
+/* Sidebar styling*/
+#Sidebar-replication {
+  display: flex;
+}
+.name-area {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(223, 219, 219);
+
+  display: flex;
+}
+.sidenav {
+  padding: 20px 32px 0px 32px;
+  position: fixed;
+  line-height: 22px;
+}
+
+.shopping {
+  height: 40px;
+  text-align: center;
+  padding-right: 10px;
+  width: auto;
+}
+
+.location {
+  padding-top: 10px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 25px;
+  text-align: center;
+}
+.change {
+  padding-top: 10px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 25px;
+  text-align: center;
+  color: #00b8a9;
+}
+
+.delivery-area {
+  display: flex;
+  flex-direction: column;
+}
+.delivery-options {
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px solid rgb(223, 219, 219);
+}
+.delivery-option {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+.scroll {
+  height: 700px;
+  width: 250px;
+  overflow: unset;
+  overflow: scroll;
+}
+input[type='radio'] {
+  color: red;
+}
+
+li {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  padding-top: 10px;
+  line-height: 19px;
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.categories-area {
+  padding-top: 20px;
+}
+.cat {
+  padding-bottom: 20px;
+}
+/* main */
+.cards {
+  min-width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.card {
+  flex: 1 0 19vw;
+  min-width: 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.card img {
+  max-width: 100%;
+}
+.card .text {
+  padding: 10px 20px 10px;
+  line-height: 22px;
+}
+
+.food-grid {
+  margin-left: 300px;
+  height: 87vh;
+  margin-bottom: 200px;
+
+  overflow: unset;
+
+  overflow: scroll;
+}
+
+.title-grid {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.title-div {
+  padding: 20px 0px 20px 10px;
+}
+
+.link-grid {
+  color: #00b8a9;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.shop-name {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+p {
+  padding: 0px;
+  margin: 15px 0px 0px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #828585;
+}

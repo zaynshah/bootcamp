@@ -1,0 +1,39 @@
+main {
+  background: #fff;
+  padding: 1rem 3rem 2rem;
+  width: 900px;
+  margin: 2rem auto;
+  box-shadow: rgba(0, 0, 0, 0.05) -2px -2px 4px;
+}
+
+li {
+  margin: 1rem 0;
+  line-height: 200%;
+  list-style-type: none;
+}
+
+header {
+  background: #fff;
+  padding: 1rem 3rem 1rem;
+  width: 900px;
+  margin: 2rem auto;
+  box-shadow: rgba(0, 0, 0, 0.05) -2px -2px 4px;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #ffbe76;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
